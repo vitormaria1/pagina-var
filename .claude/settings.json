@@ -1,0 +1,29 @@
+{
+  "allowedMcpServers": [
+    {
+      "serverName": "filesystem"
+    },
+    {
+      "serverCommand": ["npx", "chrome-devtools-mcp@latest"]
+    },
+    {
+      "serverUrl": "https://mcp.cloudflare.com/mcp"
+    },
+    {
+      "serverUrl": "https://mcp.supabase.com/mcp"
+    }
+  ],
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "say -v 'Luciana' 'terminei' &",
+            "statusMessage": "🔔 Notificando..."
+          }
+        ]
+      }
+    ]
+  }
+}
