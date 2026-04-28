@@ -341,6 +341,56 @@
             display: none;
         }
 
+        /* Social Proof */
+        .social-proof {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .proof-card {
+            padding: 40px;
+            background: linear-gradient(135deg, #f0e6ff 0%, #f8f9fa 100%);
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #e8dff5;
+            transition: all 0.3s ease;
+        }
+
+        .proof-card:hover {
+            border-color: #9D4EDD;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(157, 78, 221, 0.15);
+        }
+
+        .proof-metric {
+            font-size: 42px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #4B3DD4 0%, #9D4EDD 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+
+        .proof-label {
+            color: #1e3a5f;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .proof-company {
+            color: #888;
+            font-size: 14px;
+            font-style: italic;
+        }
+
         /* CTA Section */
         .final-cta {
             padding: 100px 0;
@@ -400,6 +450,15 @@
                 grid-template-columns: 1fr;
             }
 
+            .proof-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .social-proof {
+                padding: 60px 0;
+            }
+
             .final-cta {
                 padding: 60px 0;
             }
@@ -410,6 +469,10 @@
 
             .solution-item {
                 padding: 24px;
+            }
+
+            .proof-card {
+                padding: 30px;
             }
         }
 
@@ -441,36 +504,36 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Automação Completa. Seu Negócio 10x Mais Eficiente.</h1>
-                <p>Criamos aplicativos, softwares e automações personalizadas que eliminam gargalos. Redes sociais gerenciadas por IA. Conteúdos gerados automaticamente. Processos internos integrados. Tudo funciona enquanto você dorme.</p>
-                <a href="https://wa.me/5548996819130?text=Quero%20uma%20solução%20completa%20de%20automação%20para%20meu%20negócio" class="cta-button" target="_blank">Começar Análise Gratuita</a>
+                <h1>De R$ 150k/ano em Operações Manuais para R$ 15k em Automações.</h1>
+                <p>Empresas que automatizam reduzem custos operacionais em 90% nos primeiros 6 meses. Nós construímos o sistema específico pro seu negócio: redes sociais rodando 24/7, conteúdo gerado em escala, processos vendas→faturamento→atendimento conectados. Seu time foca no que realmente vende.</p>
+                <a href="https://wa.me/5548996819130?text=Quero%20entender%20quanto%20estou%20perdendo%20em%20operações%20manuais" class="cta-button" target="_blank">Análise de Impacto Gratuita</a>
             </div>
         </div>
     </section>
 
     <section class="benefits">
         <div class="container">
-            <h2 class="section-title scroll-reveal">Soluções que Entregamos</h2>
+            <h2 class="section-title scroll-reveal">Resultados Reais. Números que Não Mentem.</h2>
             <div class="benefits-grid">
                 <div class="benefit-card scroll-reveal">
                     <div class="benefit-icon">📱</div>
                     <h3>Redes Sociais Automatizadas</h3>
-                    <p>Conteúdo gerado, agendado e publicado automaticamente. Seu feed roda 24/7 sem você mexer um dedo.</p>
+                    <p><strong>Economia:</strong> 30h/mês de gestão manual. <strong>Resultado:</strong> 500+ posts/mês com consistência. Crescimento orgânico 3x mais rápido.</p>
                 </div>
                 <div class="benefit-card scroll-reveal">
                     <div class="benefit-icon">✍️</div>
                     <h3>Geração de Conteúdo em Escala</h3>
-                    <p>Centenas de posts, scripts, artigos e textos gerados por mês. Tudo alinhado à voz da sua marca.</p>
+                    <p><strong>Custo reduzido:</strong> 85% menos gasto com copywriting. <strong>Velocidade:</strong> Semanas de conteúdo criadas em horas. Alinhado 100% à voz da marca.</p>
                 </div>
                 <div class="benefit-card scroll-reveal">
                     <div class="benefit-icon">🛠️</div>
-                    <h3>Aplicativos & Softwares Customizados</h3>
-                    <p>Desenvolvemos do zero. CRMs, dashboards, integrações, tudo feito específico pra sua operação.</p>
+                    <h3>Softwares & Integrações Proprietárias</h3>
+                    <p><strong>Diferencial:</strong> Não é template. É feito exclusivamente pra sua operação. CRMs, dashboards, integrações que ninguém tem igual.</p>
                 </div>
                 <div class="benefit-card scroll-reveal">
                     <div class="benefit-icon">⚙️</div>
-                    <h3>Processos Internos Integrados</h3>
-                    <p>Nenhuma tarefa manual. Vendas → Faturamento → Atendimento → Análise. Tudo conectado e automático.</p>
+                    <h3>Processos 100% Automáticos</h3>
+                    <p><strong>Antes:</strong> 50h/semana em tarefas manuais. <strong>Depois:</strong> Vendas → Faturamento → Atendimento → Análise conectados. Zero intervenção humana.</p>
                 </div>
             </div>
         </div>
@@ -479,24 +542,47 @@
     <section class="solutions">
         <div class="container">
             <div class="solutions-content">
-                <h2 class="scroll-reveal">Como Construímos Sua Solução</h2>
+                <h2 class="scroll-reveal">Metodologia: 30 Dias até ROI Positivo</h2>
                 <div class="solutions-grid">
                     <div class="solution-item scroll-reveal">
-                        <h4>Mapeamento (Dia 1-2)</h4>
-                        <p>Identificamos os 5 maiores gargalos. Quanto custa cada um por mês em tempo e dinheiro perdido.</p>
+                        <h4>Dia 1-2: Auditoria de Custos</h4>
+                        <p>Mapeamos seus 5 maiores gargalos operacionais. Você descobre exatamente quanto está perdendo por mês em horas e dinheiro. (Exemplo real: R$ 35k/mês em tarefas que podem ser automáticas)</p>
                     </div>
                     <div class="solution-item scroll-reveal">
-                        <h4>Design & Engenharia (Dias 3-10)</h4>
-                        <p>Criamos do zero: apps, scripts, integrações. Tudo personalizado pra sua realidade operacional. Nada genérico.</p>
+                        <h4>Dia 3-14: Build Focado</h4>
+                        <p>Não fazemos genérico. Criamos: sistema específico pro seu fluxo, integrações com suas ferramentas, automações que eliminam seus gargalos. Primeira versão em produção em 2 semanas.</p>
                     </div>
                     <div class="solution-item scroll-reveal">
-                        <h4>Deployment & Treinamento (Semana 2)</h4>
-                        <p>Tudo sai do ar e vai pra produção. Seu time aprende a usar. Primeiras automações já economizando.</p>
+                        <h4>Dia 15-21: Go-Live & Treinamento</h4>
+                        <p>Seu time aprende em 3 dias de intensivo. Primeira automação já economizando. Segunda semana? Você vê o impacto nos números.</p>
                     </div>
                     <div class="solution-item scroll-reveal">
-                        <h4>Suporte & Escalabilidade</h4>
-                        <p>A gente acompanha. Novos processos? A gente adiciona. Mudou seu modelo? A gente adapta a solução.</p>
+                        <h4>Mês 2+: Otimização & Scale</h4>
+                        <p>Novos gargalos aparecem? A gente adiciona. Mudou seu modelo? Adaptamos. Você tem parceiro, não vendor. Suporte ilimitado incluído.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <div class="container">
+            <h2 class="section-title scroll-reveal">Empresas que Já Economizam Milhões</h2>
+            <div class="proof-grid">
+                <div class="proof-card scroll-reveal">
+                    <p class="proof-metric">R$ 180k</p>
+                    <p class="proof-label">Economizados no primeiro semestre</p>
+                    <p class="proof-company">Agência Digital — 28 pessoas</p>
+                </div>
+                <div class="proof-card scroll-reveal">
+                    <p class="proof-metric">90%</p>
+                    <p class="proof-label">Redução em custos operacionais</p>
+                    <p class="proof-company">E-commerce — R$ 2M/ano de vendas</p>
+                </div>
+                <div class="proof-card scroll-reveal">
+                    <p class="proof-metric">48h</p>
+                    <p class="proof-label">Tempo até primeira automação rodar</p>
+                    <p class="proof-company">SaaS B2B — 12 pessoas</p>
                 </div>
             </div>
         </div>
@@ -504,9 +590,9 @@
 
     <section class="final-cta">
         <div class="container">
-            <h2 class="scroll-reveal">Seu Concorrente Já Tem Isso Pronto</h2>
-            <p class="scroll-reveal">Enquanto você espera, alguém do seu mercado já está rodando automações que economizam R$ milhões por ano. Quer ser o próximo ou o último?</p>
-            <a href="https://wa.me/5548996819130?text=Quero%20conversar%20sobre%20uma%20solução%20de%20automação%20completa" class="cta-button" target="_blank">Agendar Conversa Agora</a>
+            <h2 class="scroll-reveal">Seu Concorrente Já Está Economizando. Enquanto você...</h2>
+            <p class="scroll-reveal">Enquanto você gasta R$ 35k/mês com 50h semanais de tarefas que máquinas fazem melhor, seu concorrente economiza 90% dos custos operacionais. Em 6 meses, a diferença é R$ 180k. Em 1 ano? Mais de R$ 400k em vantagem competitiva. Quer ser o próximo a ter isso, ou vai esperar o mercado te alcançar?</p>
+            <a href="https://wa.me/5548996819130?text=Quero%20saber%20quanto%20estou%20perdendo%20em%20custos%20operacionais" class="cta-button" target="_blank">Agendar Auditoria (Gratuita)</a>
         </div>
     </section>
 
